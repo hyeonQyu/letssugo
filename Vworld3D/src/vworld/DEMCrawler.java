@@ -35,13 +35,13 @@ public class DEMCrawler {
 	static int nn = 0;
 	
 	static String url3 = "http://xdworld.vworld.kr:8080/XDServer/requestLayerNode?APIKey=";
-	static String apiKey = "----여기에는 직접 신청해서 받은 apikey를 넣는다------";
+	static String apiKey = "3A5BC79F-2161-3C0B-A0AD-7F66EF5856D5";
 	
 	//중복 다운이나 변환하지 않도록 저장할 폴더
-	static String storageDirectory  = "X:\\source\\vworld_terrain\\";
+	static String storageDirectory  = "C:\\Users\\hgKim\\Documents\\College\\3Grade\\1stSemester\\SoftwareProject\\Let'SSUgo\\Vworld3D\\Terrain\\Origin\\";
 	
 	//얻고자 하는 영역을 그때그때 다르게 설정해주면 좋다. obj파일들만 저장됨
-	static String targetDirectory = "x:\\source\\vworld\\#obj_test\\";
+	static String targetDirectory = "C:\\Users\\hgKim\\Documents\\College\\3Grade\\1stSemester\\SoftwareProject\\Let'SSUgo\\Vworld3D\\Terrain\\Sample\\";
 	
 	//아래에서 값 참고
 	//https://github.com/nasa/World-Wind-Java/blob/master/WorldWind/src/gov/nasa/worldwind/globes/Earth.java
@@ -52,7 +52,7 @@ public class DEMCrawler {
     public static final double ELEVATION_MIN = -11000d; // Depth of Marianas trench
     public static final double ELEVATION_MAX = 8500d; // Height of Mt. Everest.
 	
-	static int level = 15;
+	static int level = 13;
 	/*
 	level 15 = 1.5m grid (대략적으로)
 	level 14 = 3m grid
@@ -68,7 +68,7 @@ public class DEMCrawler {
 	
 	private static String[] getCoordination() {
 		
-		String minmax = "37.560639, 126.991816,37.571219, 126.999605"; //얻고자 하는 영역의  {좌하단 위도, 좌하단 경도, 우상단 위도, 우상단 경도} 순서 
+		String minmax = "37.495729, 126.954277, 37.497108, 126.961208"; //얻고자 하는 영역의  {좌하단 위도, 좌하단 경도, 우상단 위도, 우상단 경도} 순서 
 		String[] temp1 = minmax.replaceAll(" ", "").split(",");
 		return new String[]{temp1[1],temp1[0], temp1[3],temp1[2]};
 	}

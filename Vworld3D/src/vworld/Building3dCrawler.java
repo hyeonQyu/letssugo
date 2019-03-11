@@ -33,11 +33,11 @@ public class Building3dCrawler {
 	
 	static String url3 = "http://xdworld.vworld.kr:8080/XDServer/requestLayerNode?APIKey=";	
 	static String url4 = "http://xdworld.vworld.kr:8080/XDServer/requestLayerObject?APIKey=";	
-	static String apiKey = "----apikey를 신청하여 받은 후 이곳에 복사한다.-----";
+	static String apiKey = "3A5BC79F-2161-3C0B-A0AD-7F66EF5856D5";
 	static String referer = "http://localhost:4141"; //apikey를 신청할 때 입력하는 호스트 주소
 	
-	static String storageFolder  = "x:\\vworld\\";	 // 한번 받으면 계속 저장해 둘 폴더
-	static String targetFolder = "x:\\vworld\\#obj_sample\\"; //그때그때 필요한 영역을 추출할 폴더, 요청 영역이 달라질때마다 바꾸어줘도 서버 요청 부하는 없다.
+	static String storageFolder  = "C:\\Users\\hgKim\\Documents\\College\\3Grade\\1stSemester\\SoftwareProject\\Let'SSUgo\\Vworld3D\\Buildings\\Origin\\";	 // 한번 받으면 계속 저장해 둘 폴더
+	static String targetFolder = "C:\\Users\\hgKim\\Documents\\College\\3Grade\\1stSemester\\SoftwareProject\\Let'SSUgo\\Vworld3D\\Buildings\\Sample\\"; //그때그때 필요한 영역을 추출할 폴더, 요청 영역이 달라질때마다 바꾸어줘도 서버 요청 부하는 없다.
 	
 	static String csName1 = "EPSG:4326";
 	static String csName2 = "EPSG:5179";	    
@@ -64,7 +64,7 @@ public class Building3dCrawler {
 	
 	private static String[] getCoordination() {		
 		
-		String minmax = "37.560639, 126.991816,37.571219, 126.999605"; //sample 좌표
+		String minmax = "37.495729, 126.954277, 37.497108, 126.961208"; //sample 좌표
 		String[] temp1 = minmax.replaceAll(" ", "").split(",");
 		return new String[]{temp1[1],temp1[0], temp1[3],temp1[2]};
 	}
