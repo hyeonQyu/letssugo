@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: f03777c76788c9748944b85cac191422
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000150000001600000017000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 3efb16e840215bf819cfb6fc08f011cf
+  longitude: 127
+  latitude: 37.5
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -3042742.2, y: 4044418.5, z: -3884310.2}
+      lookAt: {x: -2983765.8, y: 3848919.2, z: -3217049}
+      up: {x: 0.02466611, y: 0.95995283, z: 0.27907366}
+      fov: 30
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 69849_29012
+    100002: 69850_29012
+    100004: Buildings
+    100006: final_object file279396_116050.obj
+    100008: final_object file279397_116049.obj
+    100010: final_object file279397_116050.obj
+    100012: final_object file279398_116049.obj
+    100014: final_object file279398_116050.obj
+    100016: final_object file279399_116049.obj
+    100018: final_object file279400_116049.obj
+    100020: final_object file279401_116049.obj
+    100022: final_object file279402_116049.obj
+    100024: //RootNode
+    100026: Terrain
+    400000: 69849_29012
+    400002: 69850_29012
+    400004: Buildings
+    400006: final_object file279396_116050.obj
+    400008: final_object file279397_116049.obj
+    400010: final_object file279397_116050.obj
+    400012: final_object file279398_116049.obj
+    400014: final_object file279398_116050.obj
+    400016: final_object file279399_116049.obj
+    400018: final_object file279400_116049.obj
+    400020: final_object file279401_116049.obj
+    400022: final_object file279402_116049.obj
+    400024: //RootNode
+    400026: Terrain
+    2100000: 115900000000000003180205
+    2100002: 115900000000000003190205
+    2100004: 115900000000000003060205
+    2100006: 115900000000000003130205
+    2100008: 115900000000000003160205
+    2100010: 115900000000000003170205
+    2100012: 115900000000000003120205
+    2100014: 115900000000000003150205
+    2100016: 115900000000000003010205
+    2100018: 115900000000000003050205
+    2100020: 115900000000000005070205
+    2100022: 115900000000000003070205
+    2100024: 115900000000000003030205
+    2100026: 115900000000000003140205
+    2100028: 115900000000000003040205
+    2100030: 115900000000000002990205
+    2100032: 115900000000000003000205
+    2100034: 69849_29012
+    2100036: 69850_29012
+    2300000: 69849_29012
+    2300002: 69850_29012
+    2300004: final_object file279396_116050.obj
+    2300006: final_object file279397_116049.obj
+    2300008: final_object file279397_116050.obj
+    2300010: final_object file279398_116049.obj
+    2300012: final_object file279398_116050.obj
+    2300014: final_object file279399_116049.obj
+    2300016: final_object file279400_116049.obj
+    2300018: final_object file279401_116049.obj
+    2300020: final_object file279402_116049.obj
+    3300000: 69849_29012
+    3300002: 69850_29012
+    3300004: final_object file279396_116050.obj
+    3300006: final_object file279397_116049.obj
+    3300008: final_object file279397_116050.obj
+    3300010: final_object file279398_116049.obj
+    3300012: final_object file279398_116050.obj
+    3300014: final_object file279399_116049.obj
+    3300016: final_object file279400_116049.obj
+    3300018: final_object file279401_116049.obj
+    3300020: final_object file279402_116049.obj
+    4300000: Mesh final_object file279398_116050.obj
+    4300002: Mesh final_object file279397_116050.obj
+    4300004: Mesh final_object file279400_116049.obj
+    4300006: Mesh final_object file279399_116049.obj
+    4300008: Mesh final_object file279402_116049.obj
+    4300010: Mesh final_object file279398_116049.obj
+    4300012: Mesh final_object file279397_116049.obj
+    4300014: Mesh final_object file279401_116049.obj
+    4300016: Mesh final_object file279396_116050.obj
+    4300018: Mesh 69849_29012
+    4300020: Mesh 69850_29012
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
