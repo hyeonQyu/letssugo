@@ -15,8 +15,8 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     private Text _txtLongitude;
 
-    private float _latitude;
-    private float _longitude;
+    private float _myLatitude;
+    private float _myLongitude;
     private float _targetLatitude;
     private float _targetLongitude;
 
@@ -30,6 +30,7 @@ public class CameraController : MonoBehaviour
         Cube.SetActive(false);
         SetTargetLocation(37.494391f, 126.960081f);
         _num = 0;
+        //  Input.compass.enabled = true;
         CheckGPSConnection();
     }
 
@@ -59,11 +60,12 @@ public class CameraController : MonoBehaviour
             yield break;
 
         Input.location.Start();     // 위치정보를 받기 시작
+        Input.compass.enabled = true;
         //int maxWait = 20;
         while(Input.location.status == LocationServiceStatus.Initializing/* && maxWait > 0*/)
         {
-            _latitude = Input.location.lastData.latitude;
-            _longitude = Input.location.lastData.longitude;
+            _myLatitude = Input.location.lastData.latitude;
+            _myLongitude = Input.location.lastData.longitude;
             _txtLatitude.text = "latitude" + Input.location.lastData.latitude;
             _txtLongitude.text = "longtitude" + Input.location.lastData.longitude;
             _num++;
@@ -104,7 +106,7 @@ public class CameraController : MonoBehaviour
 
     private void CheckDistance()
     {
-        _distance = GetDistance(_targetLatitude, _targetLongitude, _latitude, _longitude);
+        _distance = GetDistance(_targetLatitude, _targetLongitude, _myLatitude, _myLongitude);
         if(_distance < 10)
             Cube.SetActive(true);
         else
