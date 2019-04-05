@@ -1,0 +1,43 @@
+Open Source Software Notice (MAXST AR SDK 4.0.0)
+==================================================================================
+
+Zxing
+Copyright 2010-2011 ZXing authors
+https://zxing.github.io/zxing/license.html
+Apache License 2.0
+
+
+ZxingCPP
+https://github.com/glassechidna/zxing-cpp/blob/master/NOTICE
+Apache License 2.0
+
+
+OpenCV
+http://opencv.org/license.html
+3-clause BSD License
+
+
+jsoncpp
+Copyright 2007-2010 Baptiste Lepilleur
+http://jsoncpp.sourceforge.net/LICENSE
+MIT License
+
+
+Eigen
+http://eigen.tuxfamily.org/index.php?title=Main_Page#License
+Mozilla Public License version 2.0
+
+
+OpenSSL
+Copyright 1998-2018 The OpenSSL Project
+https://www.openssl.org/source/license.html
+OpenSSL License
+Copyright 1995-1998 Eric Young
+https://www.openssl.org/source/license.html
+Origianl SSLeay License
+
+
+JSON Web Tokens
+Copyright 2013-2014 Auth0 Inc.
+https://github.com/jsonwebtoken/jsonwebtoken.github.io/blob/master/LICENSE.txt
+MIT License
