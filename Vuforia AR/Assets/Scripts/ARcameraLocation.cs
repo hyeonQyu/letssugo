@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class ARcameraLocation : MonoBehaviour
 {
     // 실제 위도, 경도를 유니티 상의 위치로 바꾸기 위한 상수값
-    private const float hRatio = 47.09577754891864f;
-    private const float wRatio = 59.751588677065286f;
-    private const float hBias = 1997.6100809096872f;
-    private const float wBias = 894.9552837667987f;
-    private const float aRatio = 5.489942435806222f;
+    private const float hRatio = 4.709577754891864f;
+    private const float wRatio = 5.9751588677065286f;
+    private const float hBias = 19976.100809096872f;
+    private const float wBias = 8949.552837667987f;
+    private const float aRatio = 0.5489942435806222f;
 
     private float _latitude;
     private float _longitude;
