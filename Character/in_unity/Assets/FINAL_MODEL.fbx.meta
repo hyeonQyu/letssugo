@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 7d4b3e6d1a261d64cb26d71a6ff508cc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera
+    100004: Cylinder
+    100006: Armature
+    100008: Bone
+    100010: Character
+    100012: head
+    100014: head_end
+    100016: leftbackbackfoot
+    100018: leftbackfoot
+    100020: leftbackfoot_end
+    100022: leftbackknee
+    100024: leftbackknee_end
+    100026: leftbackleg
+    100028: leftbackleg2
+    100030: leftbackleg2_end
+    100032: leftfronfoot
+    100034: leftfronfoot_end
+    100036: leftfrontbackfoot
+    100038: leftfrontknee
+    100040: leftfrontknee_end
+    100042: leftfrontleg
+    100044: leftfrontleg2
+    100046: leftfrontleg2_end
+    100048: Plane
+    100050: rightbackbackfoot
+    100052: rightbackfoot
+    100054: rightbackfoot_end
+    100056: rightbackknee
+    100058: rightbackknee_end
+    100060: rightbackleg
+    100062: rightbackleg2
+    100064: rightbackleg2_end
+    100066: rightfrontbackfoot
+    100068: rightfrontfoot
+    100070: rightfrontfoot_end
+    100072: rightfrontknee
+    100074: rightfrontknee_end
+    100076: rightfrontleg.
+    100078: rightfrontleg2
+    100080: rightfrontleg2_end
+    100082: tail
+    100084: tail2
+    100086: tail3
+    100088: tail3_end
+    100090: vertebra
+    100092: vertebra2
+    400000: //RootNode
+    400002: Camera
+    400004: Cylinder
+    400006: Armature
+    400008: Bone
+    400010: Character
+    400012: head
+    400014: head_end
+    400016: leftbackbackfoot
+    400018: leftbackfoot
+    400020: leftbackfoot_end
+    400022: leftbackknee
+    400024: leftbackknee_end
+    400026: leftbackleg
+    400028: leftbackleg2
+    400030: leftbackleg2_end
+    400032: leftfronfoot
+    400034: leftfronfoot_end
+    400036: leftfrontbackfoot
+    400038: leftfrontknee
+    400040: leftfrontknee_end
+    400042: leftfrontleg
+    400044: leftfrontleg2
+    400046: leftfrontleg2_end
+    400048: Plane
+    400050: rightbackbackfoot
+    400052: rightbackfoot
+    400054: rightbackfoot_end
+    400056: rightbackknee
+    400058: rightbackknee_end
+    400060: rightbackleg
+    400062: rightbackleg2
+    400064: rightbackleg2_end
+    400066: rightfrontbackfoot
+    400068: rightfrontfoot
+    400070: rightfrontfoot_end
+    400072: rightfrontknee
+    400074: rightfrontknee_end
+    400076: rightfrontleg.
+    400078: rightfrontleg2
+    400080: rightfrontleg2_end
+    400082: tail
+    400084: tail2
+    400086: tail3
+    400088: tail3_end
+    400090: vertebra
+    400092: vertebra2
+    2000000: Camera
+    2100000: Material
+    2100002: No Name
+    2300000: Plane
+    3300000: Plane
+    4300000: Cylinder
+    4300002: Plane
+    4300004: Character
+    7400000: Plane|ArmatureAction
+    7400002: Armature|ArmatureAction
+    7400004: Armature|ArmatureAction.001
+    7400006: Character|ArmatureAction
+    9500000: //RootNode
+    13700000: //RootNode
+    13700002: Cylinder
+    13700004: Character
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction.001
+      takeName: Armature|ArmatureAction.001
+      firstFrame: 0
+      lastFrame: 730
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Armature
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
