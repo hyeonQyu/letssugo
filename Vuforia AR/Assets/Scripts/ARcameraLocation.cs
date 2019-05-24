@@ -11,14 +11,19 @@ public class ARcameraLocation : MonoBehaviour
     private const float wRatio = 59.751588677065286f;
     private const float hBias = 1997.6100809096872f;
     private const float wBias = 894.9552837667987f;
+    private const float aRatio = 5.489942435806222f;
 
     private float _latitude;
     private float _longitude;
+    private float _altitude;
     private float _x;  // longitude에 의해 바뀜
+    private float _y;  // altitude에 의해 바뀜
     private float _z;  // latitude에 의해 바뀜
 
     [SerializeField]
     private Text _text;
+    [SerializeField]
+    private GameObject _map;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +31,7 @@ public class ARcameraLocation : MonoBehaviour
         Input.location.Start();
         Input.gyro.enabled = true;
         Input.gyro.updateInterval = 0.01f;
+        _map.SetActive(false);
     }
 
     // Update is called once per frame
@@ -101,18 +107,25 @@ public class ARcameraLocation : MonoBehaviour
     {
         _latitude = Input.location.lastData.latitude;
         _longitude = Input.location.lastData.longitude;
+        _altitude = Input.location.lastData.altitude;
 
         _x = GetX(_longitude);
+        _y = GetY(_altitude);
         _z = GetZ(_latitude);
 
-        _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "\n" + _x.ToString() + "     " + _z.ToString();
+        _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + _altitude.ToString() + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + _y.ToString();
 
-        transform.position = new Vector3(_x, 0, _z);
+        transform.position = new Vector3(_x, _y, _z);
     }
 
     private float GetX(float longitude)
     {
         return _longitude * 1000000.0f % 100000.0f / wRatio - wBias;
+    }
+
+    private float GetY(float altitude)
+    {
+        return (altitude - 20) / aRatio;
     }
 
     private float GetZ(float latitude)
@@ -129,7 +142,6 @@ public class ARcameraLocation : MonoBehaviour
         transquat.z = Input.gyro.attitude.z;
 
         transform.rotation = Quaternion.Euler(90, 0, 180) * transquat;
-        //transform.Rotate(-(_initialOrientationX - Input.gyro.rotationRateUnbiased.x), -(_initialOrientationY - Input.gyro.rotationRateUnbiased.y), -(_initialOrientationZ - Input.gyro.rotationRateUnbiased.z));
     }
 
 /*    // lat1, lon1 = 기존 좌표, lat2, lon2 = 새로 이동한 좌표
