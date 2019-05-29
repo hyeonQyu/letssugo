@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\ExitButton.cs" />
      <Compile Include="Assets\Scripts\OpenBuildingInfo.cs" />
      <Compile Include="Assets\Scripts\SSungMaController.cs" />
+     <Compile Include="Assets\Scripts\StudentButton.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
      <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
