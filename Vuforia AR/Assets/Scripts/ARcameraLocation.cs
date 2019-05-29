@@ -16,6 +16,8 @@ public class ARcameraLocation : MonoBehaviour
     private float _latitude;
     private float _longitude;
     private float _altitude;
+    private float _horizontalAccuracy;
+    private float _verticalAccuracy;
     private float _x;  // longitude에 의해 바뀜
     private float _y;  // altitude에 의해 바뀜
     private float _z;  // latitude에 의해 바뀜
@@ -107,16 +109,36 @@ public class ARcameraLocation : MonoBehaviour
     {
         _latitude = Input.location.lastData.latitude;
         _longitude = Input.location.lastData.longitude;
-        _altitude = Input.location.lastData.altitude;
 
         _x = GetX(_longitude);
-        _y = GetY(_altitude);
+        _y = 3.09657163053723f;
         _z = GetZ(_latitude);
 
-        _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + _altitude.ToString() + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + _y.ToString();
+        _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + "\n" + _horizontalAccuracy + "     " + _verticalAccuracy.ToString();
 
-        transform.position = new Vector3(_x, _y, _z);
+        transform.position = new Vector3(_x, _y‬‬, _z);
     }
+
+    //private void GetLocation()
+    //{
+    //    if(Input.location.status == LocationServiceStatus.Running && checkAgain)
+    //    {
+    //        Input.location.Stop();
+    //        Input.location.Start();
+
+    //        _verticalAccuracy = Input.location.lastData.verticalAccuracy;
+    //        _horizontalAccuracy = Input.location.lastData.horizontalAccuracy;
+    //    }
+
+    //    if(_horizontalAccuracy > 18 && _verticalAccuracy > 18)
+    //    {
+    //        _latitude = Input.location.lastData.latitude;
+    //        _longitude = Input.location.lastData.longitude;
+    //        _altitude = Input.location.lastData.altitude;
+    //    }
+    //    else
+    //        GetLocation(true);
+    //}
 
     private float GetX(float longitude)
     {
