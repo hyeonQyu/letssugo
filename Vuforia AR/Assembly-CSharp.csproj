@@ -56,6 +56,10 @@
      <Compile Include="Assets\Scripts\ARcameraLocation.cs" />
      <Compile Include="Assets\Scripts\ExitButton.cs" />
      <Compile Include="Assets\Scripts\OpenBuildingInfo.cs" />
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\Scripts\OpenRestaurantInfo.cs" />
+>>>>>>> 9a9ec869bbea6abfe8b802eb355d9ea99561a226
      <Compile Include="Assets\Scripts\SSungMaController.cs" />
      <Compile Include="Assets\Scripts\StudentButton.cs" />
      <Compile Include="Assets\Scripts\TodayMenu.cs" />
