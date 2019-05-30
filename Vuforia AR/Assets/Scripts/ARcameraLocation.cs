@@ -25,6 +25,8 @@ public class ARcameraLocation : MonoBehaviour
     [SerializeField]
     private Text _text;
     [SerializeField]
+    private Text _menuText;
+    [SerializeField]
     private GameObject _map;
 
     // Start is called before the first frame update
@@ -107,12 +109,15 @@ public class ARcameraLocation : MonoBehaviour
 
     private void Move()
     {
-        _latitude = Input.location.lastData.latitude;
-        _longitude = Input.location.lastData.longitude;
+        //_latitude = Input.location.lastData.latitude;
+        //_longitude = Input.location.lastData.longitude;
 
-        _x = GetX(_longitude);
+        //_x = GetX(_longitude);
+        //_y = 3.09657163053723f;
+        //_z = GetZ(_latitude);
+        _x = 622.3f;
         _y = 3.09657163053723f;
-        _z = GetZ(_latitude);
+        _z = 540.6f;
 
         _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + "\n" + _horizontalAccuracy + "     " + _verticalAccuracy.ToString();
 

@@ -18,7 +18,7 @@ public class OpenBuildingInfo : MonoBehaviour
 
         if(animator != null)
         {
-            //_imgBuilding.sprite = Resources.Load<Sprite>("UI/Buildings/" + name);
+            _imgBuilding.sprite = Resources.Load<Sprite>("UI/Buildings/" + name);
             _imgName.sprite = Resources.Load<Sprite>("UI/Building Names/" + name + "UI");
 
             animator.SetBool("open", true);

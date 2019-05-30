@@ -58,7 +58,11 @@
     <Compile Include="Assets\Scripts\ARcameraLocation.cs" />
     <Compile Include="Assets\Scripts\ExitButton.cs" />
     <Compile Include="Assets\Scripts\OpenBuildingInfo.cs" />
+    <Compile Include="Assets\Scripts\OpenRestaurantInfo.cs" />
     <Compile Include="Assets\Scripts\SSungMaController.cs" />
+    <Compile Include="Assets\Scripts\StudentButton.cs" />
+    <Compile Include="Assets\Scripts\TodayMenu.cs" />
+    <Compile Include="Assets\Scripts\TodayMenuParsing.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
@@ -285,6 +289,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>C:/Users/hgKim/Documents/College/3Grade/1stSemester/SoftwareProject/Let'SSUgo/Vuforia AR/Assets/Plugins/HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
