@@ -1,16 +1,21 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
+using UnityEngine;
 using UnityEngine.UI;
 using agi = HtmlAgilityPack;
 
-public class TodayMenu
+public class TodayMenu : MonoBehaviour
 {
+    [SerializeField]
+    Text _menuText;
+
     // Start is called before the first frame update
-    public static string RunParsing()
+    void Start()
     {
-        Text _menuText = null;
+        _menuText.text = null;
         agi.HtmlDocument doc = new agi.HtmlDocument();
         WebClient webClient = new WebClient();
         string html;
@@ -42,8 +47,6 @@ public class TodayMenu
         m2.ShowMenu(_menuText);
         m3.ShowMenu(_menuText);
         d1.ShowMenu(_menuText);
-
-        return _menuText.text;
 
     }
 

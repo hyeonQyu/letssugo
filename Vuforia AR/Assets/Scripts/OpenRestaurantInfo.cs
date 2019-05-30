@@ -7,8 +7,6 @@ public class OpenRestaurantInfo : MonoBehaviour
 {
     [SerializeField]
     private GameObject _panel;
-    [SerializeField]
-    private Text _text;
 
     public void OnClickOpenButton()
     {
@@ -16,7 +14,6 @@ public class OpenRestaurantInfo : MonoBehaviour
 
         if(animator != null)
         {
-            _text.text = TodayMenu.RunParsing();
             animator.SetBool("open", true);
         }
 

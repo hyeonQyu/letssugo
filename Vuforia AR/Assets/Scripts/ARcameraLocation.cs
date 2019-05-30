@@ -25,6 +25,8 @@ public class ARcameraLocation : MonoBehaviour
     [SerializeField]
     private Text _text;
     [SerializeField]
+    private Text _menuText;
+    [SerializeField]
     private GameObject _map;
 
     // Start is called before the first frame update
