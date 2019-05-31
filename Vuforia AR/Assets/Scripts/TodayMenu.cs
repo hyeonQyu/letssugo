@@ -47,7 +47,6 @@ public class TodayMenu : MonoBehaviour
         m2.ShowMenu(_menuText);
         m3.ShowMenu(_menuText);
         d1.ShowMenu(_menuText);
-
     }
 
     public class Menu
