@@ -57,8 +57,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ARcameraLocation.cs" />
     <Compile Include="Assets\Scripts\ButtonListeners.cs" />
+    <Compile Include="Assets\Scripts\GroupParsing.cs" />
     <Compile Include="Assets\Scripts\SSungMaController.cs" />
-    <Compile Include="Assets\Scripts\TodayMenu.cs" />
+    <Compile Include="Assets\Scripts\TodayMenuParsing.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />

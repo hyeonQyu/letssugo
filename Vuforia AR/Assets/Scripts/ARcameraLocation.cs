@@ -36,92 +36,36 @@ public class ARcameraLocation : MonoBehaviour
         Input.gyro.enabled = true;
         Input.gyro.updateInterval = 0.01f;
         _map.SetActive(false);
+
+        StartCoroutine("Move");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Invoke("Move", 0.2f);
-        Invoke("GyroRotate", 0.2f);
+       // Invoke("Move", 0.2f);
+       // GyroRotate();
     }
 
-    //private IEnumerator Move()
-    //{
-    //    if(!Input.location.isEnabledByUser)
-    //    {
-    //        Debug.Log("not enabled GPS");
-    //        text.text = "not enabled GPS";
-    //        yield break;
-    //    }
-
-    //    Input.location.Start();
-
-    //    int maxWait = 20;
-    //    while(Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
-    //    {
-    //        yield return new WaitForSeconds(1);
-    //        maxWait--;
-    //    }
-
-    //    if(maxWait <= 0)
-    //    {
-    //        Debug.Log("Timed out");
-    //        text.text = "Timed out";
-    //        yield break;
-    //    }
-
-    //    if(Input.location.status == LocationServiceStatus.Failed)
-    //    {
-    //        Debug.Log("Unable to determin device location");
-    //        text.text = "Unable to determin device location";
-    //        yield break;
-    //    }
-
-    //    if(num == 0)
-    //    {
-    //        _prevLatitude = Input.location.lastData.latitude;
-    //        _prevLongitude = Input.location.lastData.longitude;
-    //        num = 1;
-    //    }
-
-    //    num++;
-
-    //    _curLatitude = Input.location.lastData.latitude;
-    //    _curLongitude = Input.location.lastData.longitude;
-
-    //    _moveX = (float)GetX(_prevLatitude, _prevLongitude, _curLatitude, _curLongitude);
-    //    _moveZ = (float)GetX(_prevLatitude, _prevLongitude, _curLatitude, _curLongitude);
-
-    //    _curX += _moveX;
-    //    _curZ += _moveZ;
-    //    transform.position = new Vector3(_curX, 0, _curZ);
-
-    //    text.text = _curLatitude + "    " + _curLongitude + "\n" + _curX.ToString() + "        " + _curZ.ToString() + "\n" + num;
-
-    //    _prevLatitude = _curLatitude;
-    //    _prevLongitude = _curLongitude;
-
-    //    Input.location.Stop();
-    //    yield return new WaitForSeconds(0.2f);
-
-    //    //yield break;
-    //}
-
-    private void Move()
+    IEnumerator Move()
     {
-        //_latitude = Input.location.lastData.latitude;
-        //_longitude = Input.location.lastData.longitude;
+        while(true)
+        {
+            yield return new WaitForSeconds(0.2f);
+            //_latitude = Input.location.lastData.latitude;
+            //_longitude = Input.location.lastData.longitude;
 
-        //_x = GetX(_longitude);
-        //_y = 3.09657163053723f;
-        //_z = GetZ(_latitude);
-        _x = 669;
-        _y = 3.09657163053723f;
-        _z = 507.3f;
+            //_x = GetX(_longitude);
+            //_y = 3.09657163053723f;
+            //_z = GetZ(_latitude);
+            _x = 669;
+            _y = 3.09657163053723f;
+            _z = 507.3f;
 
-        _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + "\n" + _horizontalAccuracy + "     " + _verticalAccuracy.ToString();
+            _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + "\n" + _horizontalAccuracy + "     " + _verticalAccuracy.ToString();
 
-        transform.position = new Vector3(_x, _y‬‬, _z);
+            transform.position = new Vector3(_x, _y‬‬, _z);
+        }
     }
 
     //private void GetLocation()
