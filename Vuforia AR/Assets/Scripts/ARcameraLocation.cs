@@ -115,9 +115,9 @@ public class ARcameraLocation : MonoBehaviour
         //_x = GetX(_longitude);
         //_y = 3.09657163053723f;
         //_z = GetZ(_latitude);
-        _x = 622.3f;
+        _x = 669;
         _y = 3.09657163053723f;
-        _z = 540.6f;
+        _z = 507.3f;
 
         _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + "\n" + _horizontalAccuracy + "     " + _verticalAccuracy.ToString();
 

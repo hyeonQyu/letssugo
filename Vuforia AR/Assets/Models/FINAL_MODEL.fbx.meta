@@ -193,7 +193,7 @@ ModelImporter:
       name: Stand
       takeName: Armature|ArmatureAction.001
       firstFrame: 327
-      lastFrame: 340
+      lastFrame: 617
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -220,8 +220,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Run
       takeName: Armature|ArmatureAction.001
-      firstFrame: 340
-      lastFrame: 637
+      firstFrame: 617
+      lastFrame: 970
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -248,8 +248,8 @@ ModelImporter:
     - serializedVersion: 16
       name: RunSlow
       takeName: Armature|ArmatureAction.001
-      firstFrame: 637
-      lastFrame: 730
+      firstFrame: 970
+      lastFrame: 1151
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -277,7 +277,7 @@ ModelImporter:
       name: Armature|ArmatureAction.001
       takeName: Armature|ArmatureAction.001
       firstFrame: 0
-      lastFrame: 730
+      lastFrame: 1151
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -20,7 +20,11 @@ public class ButtonListeners : MonoBehaviour
     [SerializeField]
     private GameObject _btnBuilding;
 
+    [SerializeField]
+    private GameObject _questionMark;
+
     private bool _isOpened;
+    private Vector3 _ssungPos;
 
     public void OnClickExit()
     {
@@ -31,6 +35,7 @@ public class ButtonListeners : MonoBehaviour
 
     public void OnClickOpenBuildingInfo()
     {
+        //_panel = 건물 정보 패널
         Animator animator = _panel.GetComponent<Animator>();
 
         if(animator != null)
@@ -44,6 +49,7 @@ public class ButtonListeners : MonoBehaviour
 
     public void OnClickOpenRestaurantInfo()
     {
+        // _panel = 학식 정보 패널
         Animator animator = _panel.GetComponent<Animator>();
 
         if(animator != null)
@@ -54,6 +60,7 @@ public class ButtonListeners : MonoBehaviour
 
     public void OnClickStart()
     {
+        // _panel = 시작 화면
         Animator animator = _panel.GetComponent<Animator>();
 
         if(animator != null)
@@ -77,6 +84,41 @@ public class ButtonListeners : MonoBehaviour
 
     public void OnClickQuestionMark()
     {
+        // _panel = 슝마
+        //_panel.SetActive(true);
+        Animator animator = _panel.GetComponent<Animator>();
 
+        if(animator != null)
+        {
+            _questionMark.transform.position = new Vector3(-100, -100, -100);
+            animator.SetBool("Run", true);
+
+            StartCoroutine(MoveSsungMa(animator));
+        }
+    }
+
+    IEnumerator MoveSsungMa(Animator animator)
+    {
+        _ssungPos = _panel.transform.position;
+        bool isAnimationTrue = true;
+
+        while(_panel.transform.position.x > 685)
+        {
+            yield return new WaitForSeconds(0.01f);
+
+           // if(_ssungPos.x > 705)
+            _ssungPos.x -= 0.3f;
+            //else if(_ssungPos.x > 695)
+            //{
+            //    if(isAnimationTrue)
+            //        animator.SetBool("Run", false);
+            //    _ssungPos.x -= 1f;
+            //}
+            //else
+            //    _ssungPos.x -= 0.5f;
+
+            _panel.transform.position = new Vector3(_ssungPos.x, _ssungPos.y, _ssungPos.z);
+        }
+        animator.SetBool("Run", false);
     }
 }

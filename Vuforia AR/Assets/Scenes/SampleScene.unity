@@ -413,6 +413,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &72132477
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +922,7 @@ GameObject:
   - component: {fileID: 166708443}
   - component: {fileID: 166708442}
   - component: {fileID: 166708441}
+  - component: {fileID: 166708444}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -937,7 +939,7 @@ RectTransform:
   m_GameObject: {fileID: 166708439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.53751, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2059379560}
   m_RootOrder: 0
@@ -986,7 +988,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 166708442}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166708444}
+        m_MethodName: OnClickQuestionMark
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &166708442
@@ -1009,8 +1022,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: cba33eafbb5755540ba7bdb0c3cc3d5f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1026,6 +1039,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166708439}
   m_CullTransparentMesh: 0
+--- !u!114 &166708444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166708439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1540d652c095084d9c1ba2540f987c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 0}
+  _imgBuilding: {fileID: 0}
+  _imgName: {fileID: 0}
+  _btnClub: {fileID: 0}
+  _btnRestaurant: {fileID: 0}
+  _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &169128632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1205,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1463,12 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: -9.310001}
   m_SizeDelta: {x: 25, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &196458342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100020, guid: ca2f88c96cab088439a6a6552e31d046,
+    type: 3}
+  m_PrefabInstance: {fileID: 1137387741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &239141792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,6 +1481,7 @@ GameObject:
   - component: {fileID: 239141796}
   - component: {fileID: 239141795}
   - component: {fileID: 239141794}
+  - component: {fileID: 239141797}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -1507,7 +1547,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 239141795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 239141797}
+        m_MethodName: OnClickQuestionMark
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &239141795
@@ -1530,8 +1581,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: cba33eafbb5755540ba7bdb0c3cc3d5f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1547,6 +1598,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239141792}
   m_CullTransparentMesh: 0
+--- !u!114 &239141797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239141792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1540d652c095084d9c1ba2540f987c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 0}
+  _imgBuilding: {fileID: 0}
+  _imgName: {fileID: 0}
+  _btnClub: {fileID: 0}
+  _btnRestaurant: {fileID: 0}
+  _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &260159264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1764,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &302666271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,7 +1850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302666271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 622.3, y: 0, z: 540.6}
+  m_LocalPosition: {x: 669, y: 0, z: 507.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2234,6 +2305,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -3.6622696}
   m_SizeDelta: {x: 25, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &486523425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: 56b1cba7220dfd849ab14dbd1636d920,
+    type: 3}
+  m_PrefabInstance: {fileID: 864699323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &500001432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,6 +2687,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &578902556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,9 +3042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df38b609cbbf7cb44a54005bbdf67f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _btnClub: {fileID: 1703122372}
-  _btnRestaurant: {fileID: 1022318027}
-  _btnBuilding: {fileID: 1916097294}
 --- !u!114 &623792164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3409,6 +3484,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &802532455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,6 +3884,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &852486686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3963,15 +4040,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 695
+      value: 815.5
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.02
+      value: 6.6
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4020,6 +4097,14 @@ PrefabInstance:
     - target: {fileID: 400008, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c50ee2126cf0c954e995b0b66cd3786b, type: 2}
+    - target: {fileID: 9500000, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
@@ -4176,6 +4261,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &888513018
 GameObject:
   m_ObjectHideFlags: 0
@@ -4422,6 +4508,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &987738340
 GameObject:
   m_ObjectHideFlags: 0
@@ -4742,6 +4829,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!114 &1073579492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4881,7 +4969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: ca2f88c96cab088439a6a6552e31d046, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: ca2f88c96cab088439a6a6552e31d046, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4918,6 +5006,18 @@ PrefabInstance:
     - target: {fileID: 400020, guid: ca2f88c96cab088439a6a6552e31d046, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: ca2f88c96cab088439a6a6552e31d046, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: ca2f88c96cab088439a6a6552e31d046, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400020, guid: ca2f88c96cab088439a6a6552e31d046, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: ca2f88c96cab088439a6a6552e31d046, type: 3}
       propertyPath: m_Controller
@@ -5062,6 +5162,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!114 &1228366478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5299,6 +5400,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &1248522286
 GameObject:
   m_ObjectHideFlags: 0
@@ -5696,7 +5798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00004057038, y: 0.00002212835}
+  m_AnchoredPosition: {x: 0.00004057038, y: 0.000041535706}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1453755855
@@ -5926,6 +6028,7 @@ MonoBehaviour:
   _btnClub: {fileID: 1684420079}
   _btnRestaurant: {fileID: 547851693}
   _btnBuilding: {fileID: 824481811}
+  _questionMark: {fileID: 0}
 --- !u!1 &1482866698
 GameObject:
   m_ObjectHideFlags: 0
@@ -6043,7 +6146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1489828938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6371,6 +6474,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &1553667459
 GameObject:
   m_ObjectHideFlags: 0
@@ -6756,6 +6860,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &1684420079
 GameObject:
   m_ObjectHideFlags: 0
@@ -7451,6 +7556,7 @@ GameObject:
   - component: {fileID: 1873756358}
   - component: {fileID: 1873756357}
   - component: {fileID: 1873756356}
+  - component: {fileID: 1873756359}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -7467,7 +7573,7 @@ RectTransform:
   m_GameObject: {fileID: 1873756354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.46591976, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1955839308}
   m_RootOrder: 0
@@ -7516,7 +7622,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1873756357}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1873756359}
+        m_MethodName: OnClickQuestionMark
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1873756357
@@ -7539,8 +7656,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: cba33eafbb5755540ba7bdb0c3cc3d5f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7556,6 +7673,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873756354}
   m_CullTransparentMesh: 0
+--- !u!114 &1873756359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873756354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1540d652c095084d9c1ba2540f987c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 0}
+  _imgBuilding: {fileID: 0}
+  _imgName: {fileID: 0}
+  _btnClub: {fileID: 0}
+  _btnRestaurant: {fileID: 0}
+  _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &1899097758
 GameObject:
   m_ObjectHideFlags: 0
@@ -7568,6 +7704,7 @@ GameObject:
   - component: {fileID: 1899097762}
   - component: {fileID: 1899097761}
   - component: {fileID: 1899097760}
+  - component: {fileID: 1899097763}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -7633,7 +7770,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1899097761}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1899097763}
+        m_MethodName: OnClickQuestionMark
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1899097761
@@ -7656,8 +7804,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: cba33eafbb5755540ba7bdb0c3cc3d5f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7673,6 +7821,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899097758}
   m_CullTransparentMesh: 0
+--- !u!114 &1899097763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899097758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1540d652c095084d9c1ba2540f987c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 486523425}
+  _imgBuilding: {fileID: 0}
+  _imgName: {fileID: 0}
+  _btnClub: {fileID: 0}
+  _btnRestaurant: {fileID: 0}
+  _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 196458342}
 --- !u!1 &1916097294
 GameObject:
   m_ObjectHideFlags: 0
@@ -8056,6 +8223,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &1982436259
 GameObject:
   m_ObjectHideFlags: 0
@@ -8547,6 +8715,7 @@ MonoBehaviour:
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
 --- !u!1 &2053007944
 GameObject:
   m_ObjectHideFlags: 0
@@ -8751,13 +8920,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053236404}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 62.8, y: 0, z: 37.607}
+  m_LocalRotation: {x: -0, y: 0.13689655, z: -0, w: 0.9905853}
+  m_LocalPosition: {x: 669, y: 1.08, z: 507.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 15.737, z: 0}
 --- !u!114 &2053236410
 MonoBehaviour:
   m_ObjectHideFlags: 0
