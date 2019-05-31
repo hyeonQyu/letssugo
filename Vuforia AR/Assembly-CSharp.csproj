@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\OpenBuildingInfo.cs" />
     <Compile Include="Assets\Scripts\OpenRestaurantInfo.cs" />
     <Compile Include="Assets\Scripts\SSungMaController.cs" />
+    <Compile Include="Assets\Scripts\StartButton.cs" />
     <Compile Include="Assets\Scripts\StudentButton.cs" />
     <Compile Include="Assets\Scripts\TodayMenu.cs" />
     <Compile Include="Assets\Scripts\TodayMenuParsing.cs" />
