@@ -56,12 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ARcameraLocation.cs" />
-    <Compile Include="Assets\Scripts\ExitButton.cs" />
-    <Compile Include="Assets\Scripts\OpenBuildingInfo.cs" />
-    <Compile Include="Assets\Scripts\OpenRestaurantInfo.cs" />
+    <Compile Include="Assets\Scripts\ButtonListeners.cs" />
     <Compile Include="Assets\Scripts\SSungMaController.cs" />
-    <Compile Include="Assets\Scripts\StartButton.cs" />
-    <Compile Include="Assets\Scripts\StudentButton.cs" />
     <Compile Include="Assets\Scripts\TodayMenu.cs" />
     <Compile Include="Assets\Scripts\TodayMenuParsing.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
