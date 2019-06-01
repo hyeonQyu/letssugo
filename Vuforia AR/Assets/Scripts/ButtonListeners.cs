@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,9 @@ public class ButtonListeners : MonoBehaviour
 
     [SerializeField]
     private GameObject _panel;
+
+    [SerializeField]
+    private Text _clubText;
 
     [SerializeField]
     private Image _imgBuilding;
@@ -256,5 +260,23 @@ public class ButtonListeners : MonoBehaviour
                 animator.SetBool("open", false);
             }          
         }     
+    }
+
+    public void OnClickClubMenu()
+    {
+        _clubText.text = "";
+        Animator animator = _panel.GetComponent<Animator>();
+        if(animator != null)
+        {
+            animator.SetBool("open", true);
+            int index = Convert.ToInt32(name);
+            _clubText.text = GroupParsing.separationRecords[index].separation + "\n\n\n";
+            for(int i = 0; i < GroupParsing.separationRecords[index].element.Count; i++)
+            {
+                _clubText.text += "\n" + GroupParsing.separationRecords[index].element[i].name + " -> ";
+                _clubText.text += GroupParsing.separationRecords[index].element[i].location + "\n";
+                _clubText.text += GroupParsing.separationRecords[index].element[i].information + "\n";
+            }
+        }
     }
 }

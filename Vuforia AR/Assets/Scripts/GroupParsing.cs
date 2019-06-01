@@ -4,12 +4,14 @@ using System.Net;
 using System.Text;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine;
 
-public class GroupParsing
+public class GroupParsing : MonoBehaviour
 {
-    public static string RunParsing()
+    public static List<SeparationRecord> separationRecords = new List<SeparationRecord>();
+
+    private void Start()
     {
-        Text text = null;
         agi.HtmlDocument doc = new agi.HtmlDocument();
         WebClient webClient = new WebClient();
         string html;
@@ -45,7 +47,6 @@ public class GroupParsing
          */
 
         // 동아리 정보들 parsing
-        List<SeparationRecord> separationRecords = new List<SeparationRecord>();
         foreach (agi.HtmlNode node1 in doc.DocumentNode.SelectNodes("//div[@id='cmscont']"))
         {
             foreach (agi.HtmlNode node2 in node1.SelectNodes(".//tbody"))
@@ -79,11 +80,11 @@ public class GroupParsing
                         index++;
                     }
                 }
+
             }
         }
 
-        ShowResult(separationRecords);
-        return text.text;
+       // ShowResult(separationRecords);
 
     }
 
@@ -91,7 +92,7 @@ public class GroupParsing
     {
         for (int i = 0; i < p.Count; i++)
         {
-            Console.WriteLine("\n" + p[i].separation + "\n");
+            Debug.Log("\n" + p[i].separation + "\n");
             for (int j = 0; j < p[i].num; j++)
             {
                 p[i].element[j].showGroupRecord();
@@ -114,6 +115,7 @@ public class GroupParsing
 
         public void showGroupRecord()
         {
+           // Debug.Log(name);
         }
 
     }
