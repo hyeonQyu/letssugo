@@ -4,15 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonListeners : MonoBehaviour
+public class ButtonListeners:MonoBehaviour
 {
     public static bool IsNavigating;
 
     [SerializeField]
     private GameObject _panel;
-
-    [SerializeField]
-    private Text _clubText;
 
     [SerializeField]
     private Image _imgBuilding;
@@ -33,10 +30,20 @@ public class ButtonListeners : MonoBehaviour
     private Image _imgBtnNavigating;
 
     [SerializeField]
-    private Text _destinationText;
+    private GameObject _ssungMaTelling;
+
+    [SerializeField]
+    private GameObject _navigatingObject;
 
     private bool _isOpened;
     private Vector3 _ssungPos;
+    [SerializeField]
+    private Text _text;
+    [SerializeField]
+    private Text _text2;
+
+    //[SerializeField]
+    private string[] _speechTexts = { "0", "1", "2", "3", "4" };
 
     public void OnClickExit()
     {
@@ -100,6 +107,10 @@ public class ButtonListeners : MonoBehaviour
         _panel.SetActive(true);
         Animator animator = _panel.GetComponent<Animator>();
 
+        //_text = GameObject.FindGameObjectWithTag("TellingText").GetComponent<Text>();
+        //_text2 = GameObject.FindGameObjectWithTag("PageText").GetComponent<Text>();
+        //_ssungMaTelling = GameObject.FindGameObjectWithTag("SSungMaTelling").GetComponent<GameObject>();
+
         if(animator != null)
         {
             _questionMark.transform.position = new Vector3(-100, -100, -100);
@@ -120,6 +131,55 @@ public class ButtonListeners : MonoBehaviour
             _panel.transform.position = new Vector3(_ssungPos.x, _ssungPos.y, _ssungPos.z);
         }
         animator.SetBool("Run", false);
+        Tell(true, true);
+    }
+
+    public void Tell(bool isFirstPage, bool isNext)
+    {
+        //_text = GameObject.FindGameObjectWithTag("TellingText").GetComponent<Text>();
+        //_text2 = GameObject.FindGameObjectWithTag("PageText").GetComponent<Text>();
+        //_ssungMaTelling = GameObject.FindGameObjectWithTag("SSungMaTelling").GetComponent<GameObject>();
+
+        if(isFirstPage)
+        {
+            // 말풍선이 생성되었을 때
+            //_ssungMaTelling.SetActive(true);
+            _ssungMaTelling.transform.localScale += new Vector3(1.0f, 1.0f, 1.0f);
+            _text.text = _speechTexts[0];
+            _text2.text = "0";
+        }
+        else
+        {
+            // 다음 말풍선
+            if(isNext)
+            {
+                int nextIndex = Convert.ToInt32(_text2.text) + 1;
+                if(nextIndex < 5)
+                {
+                    _text.text = _speechTexts[nextIndex];
+                    _text2.text = Convert.ToString(nextIndex);
+                }
+            }
+            else
+            {
+                int prevIndex = Convert.ToInt32(_text2.text) - 1;
+                if(prevIndex > -1)
+                {
+                    _text.text = _speechTexts[prevIndex];
+                    _text2.text = Convert.ToString(prevIndex);
+                }
+            }
+        }
+    }
+
+    public void OnClickNextOnSpeechBubble()
+    {
+        Tell(false, true);
+    }
+
+    public void OnClickPrevOnSpeechBubble()
+    {
+        Tell(false, false);
     }
 
     public void OnClickNavigating()
@@ -132,91 +192,96 @@ public class ButtonListeners : MonoBehaviour
             {
                 // 네비게이팅 실행 중 -> 네비게이팅 종료
                 _imgBtnNavigating.sprite = Resources.Load<Sprite>("UI/navigation button");
+                //ARnavigating.ClearNavi();
+                //_navigatingObject.SetActive(false);
                 IsNavigating = false;
             }
             else
             {
                 // 네비게이팅을 실행시키기 위해 목적지 창 띄우기(실제 실행은 아님)
+                //_text.text = "";
                 animator.SetBool("open", true);
             }
-        }        
+        }
     }
 
     public void OnClickDestination()
     {
+        _text = GameObject.FindGameObjectWithTag("Destination").GetComponent<Text>();
+
         switch(name)
         {
             case "Baird":
-                _destinationText.text = "베어드홀";
+                _text.text = "베어드홀";
                 break;
             case "SoongDeok":
-                _destinationText.text = "숭덕관";
+                _text.text = "숭덕관";
                 break;
             case "MoonHwa":
-                _destinationText.text = "문화관";
+                _text.text = "문화관";
                 break;
             case "IkTae":
-                _destinationText.text = "안익태기념관";
+                _text.text = "안익태기념관";
                 break;
             case "HyeongNam":
-                _destinationText.text = "형남공학관";
+                _text.text = "형남공학관";
                 break;
             case "KyoYook":
-                _destinationText.text = "교육관";
+                _text.text = "교육관";
                 break;
             case "BaekMa":
-                _destinationText.text = "백마관";
+                _text.text = "백마관";
                 break;
             case "KyeongJik":
-                _destinationText.text = "한경직기념관";
+                _text.text = "한경직기념관";
                 break;
             case "SinYang":
-                _destinationText.text = "신양관";
+                _text.text = "신양관";
                 break;
             case "Venture":
-                _destinationText.text = "벤처중소기업센터";
+                _text.text = "벤처중소기업센터";
                 break;
             case "JinLee":
-                _destinationText.text = "진리관";
+                _text.text = "진리관";
                 break;
             case "ManSik":
-                _destinationText.text = "조만식기념관";
+                _text.text = "조만식기념관";
                 break;
             case "Museum":
-                _destinationText.text = "한국기독교박물관";
+                _text.text = "한국기독교박물관";
                 break;
             case "Library":
-                _destinationText.text = "중앙도서관";
+                _text.text = "중앙도서관";
                 break;
             case "Research":
-                _destinationText.text = "연구관";
+                _text.text = "연구관";
                 break;
             case "ChangSin":
-                _destinationText.text = "창신관";
+                _text.text = "창신관";
                 break;
             case "Global":
-                _destinationText.text = "글로벌브레인홀";
+                _text.text = "글로벌브레인홀";
                 break;
             case "Residence":
-                _destinationText.text = "레지던스홀";
+                _text.text = "레지던스홀";
                 break;
             case "JeonSan":
-                _destinationText.text = "전산관";
+                _text.text = "전산관";
                 break;
             case "MiRae":
-                _destinationText.text = "미래관";
+                _text.text = "미래관";
                 break;
             case "JeongBo":
-                _destinationText.text = "정보과학관";
+                _text.text = "정보과학관";
                 break;
             case "West":
-                _destinationText.text = "웨스트민스터홀";
+                _text.text = "웨스트민스터홀";
                 break;
             case "Student":
-                _destinationText.text = "학생회관";
+                _text.text = "학생회관";
                 break;
             case "ChangUi":
-                _destinationText.text = "창의관";
+                _text.text = "창의관";
                 break;
             default:
                 break;
@@ -227,7 +292,9 @@ public class ButtonListeners : MonoBehaviour
     {
         if(!IsNavigating)
         {
-            switch(_destinationText.text)
+            _text = GameObject.FindGameObjectWithTag("Destination").GetComponent<Text>();
+
+            switch(_text.text)
             {
                 case "베어드홀":
                     //ARnavigating.Destination = 0;
@@ -245,37 +312,39 @@ public class ButtonListeners : MonoBehaviour
                     //ARnavigating.Destination = 5;
                     break;
                 default:
-                    _destinationText.text = "길찾기 실패";
+                    _text.text = "길찾기 실패";
                     break;
             }
 
-            if(_destinationText.text != "길찾기 실패")
+            if(_text.text != "길찾기 실패")
             {
                 // 네비게이팅 서비스 시작
-                Debug.Log("안에서 눌림");
-                _imgBtnNavigating.sprite = Resources.Load<Sprite>("UI/navigation exit button");
+                _imgBtnNavigating.sprite = Resources.Load<Sprite>("UI/navigation exit button1");
+                //_navigatingObject.SetActive(true);
                 IsNavigating = true;
 
                 Animator animator = _panel.GetComponent<Animator>();
                 animator.SetBool("open", false);
-            }          
-        }     
+            }
+        }
     }
 
     public void OnClickClubMenu()
     {
-        _clubText.text = "";
+        _text = GameObject.FindGameObjectWithTag("ClubInfoText").GetComponent<Text>();
+
+        _text.text = "";
         Animator animator = _panel.GetComponent<Animator>();
         if(animator != null)
         {
             animator.SetBool("open", true);
             int index = Convert.ToInt32(name);
-            _clubText.text = GroupParsing.separationRecords[index].separation + "\n\n\n";
+            _text.text = GroupParsing.separationRecords[index].separation + "\n\n\n";
             for(int i = 0; i < GroupParsing.separationRecords[index].element.Count; i++)
             {
-                _clubText.text += "\n" + GroupParsing.separationRecords[index].element[i].name + " -> ";
-                _clubText.text += GroupParsing.separationRecords[index].element[i].location + "\n";
-                _clubText.text += GroupParsing.separationRecords[index].element[i].information + "\n";
+                _text.text += "\n" + GroupParsing.separationRecords[index].element[i].name + " -> ";
+                _text.text += GroupParsing.separationRecords[index].element[i].location + "\n";
+                _text.text += GroupParsing.separationRecords[index].element[i].information + "\n";
             }
         }
     }

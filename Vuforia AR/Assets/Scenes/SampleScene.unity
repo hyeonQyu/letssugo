@@ -142,7 +142,7 @@ Transform:
   - {fileID: 485471533}
   - {fileID: 595209422}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 100.552, z: 0}
 --- !u!1 &37100064
 GameObject:
@@ -413,7 +413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -421,7 +420,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &72132477
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,7 +972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -978,7 +979,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &161776382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1052,7 +1056,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 3dab93f585b56b644bb6504c46c05267, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1210,16 +1214,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1540d652c095084d9c1ba2540f987c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panel: {fileID: 0}
-  _clubText: {fileID: 0}
+  _panel: {fileID: 486523425}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
-  _questionMark: {fileID: 0}
+  _questionMark: {fileID: 196458342}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 1327576373}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 1606522977}
+  _text2: {fileID: 1839972985}
 --- !u!1 &169128632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,7 +1368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -1370,7 +1375,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,16 +1783,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1540d652c095084d9c1ba2540f987c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panel: {fileID: 0}
-  _clubText: {fileID: 0}
+  _panel: {fileID: 486523425}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
-  _questionMark: {fileID: 0}
+  _questionMark: {fileID: 196458342}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 1327576373}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 1606522977}
+  _text2: {fileID: 1839972985}
 --- !u!1 &244385530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,7 +1847,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -1845,7 +1854,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &244385533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1919,7 +1931,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a4010dfb0bb3ea74493e4914619cc411, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2117,7 +2129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -2125,7 +2136,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &299739598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,7 +2268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &315449690
 GameObject:
@@ -2308,7 +2322,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -2316,7 +2329,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &315449693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2390,7 +2406,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 162585f1b4ff7a74ba7773345d6da7da, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2459,7 +2475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -2467,7 +2482,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &330588129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2786,7 +2804,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -2794,7 +2811,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &361762627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2937,7 +2957,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -2945,7 +2964,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &392616836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3088,7 +3110,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -3096,7 +3117,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &430210665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3307,7 +3331,7 @@ PrefabInstance:
     - target: {fileID: 6545508097344647248, guid: 961c11fde3ea3524cbddd8a422602c9d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000118224525
+      value: 0.00012286004
       objectReference: {fileID: 0}
     - target: {fileID: 6545508095879792817, guid: 961c11fde3ea3524cbddd8a422602c9d,
         type: 3}
@@ -3333,6 +3357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6545508097202157398, guid: 961c11fde3ea3524cbddd8a422602c9d,
+        type: 3}
+      propertyPath: m_TagString
+      value: ClubInfoText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 961c11fde3ea3524cbddd8a422602c9d, type: 3}
@@ -3390,7 +3419,7 @@ Transform:
   - {fileID: 1537486360}
   - {fileID: 333678780}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -27.094, z: 0}
 --- !u!1 &460127482
 GameObject:
@@ -3444,7 +3473,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -3452,7 +3480,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &460127485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3941,7 +3972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -3949,7 +3979,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &506659027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4092,7 +4125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -4100,7 +4132,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &531865707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4174,7 +4209,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9be4429db0aa2f343abfb0dde03f5008, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4463,7 +4498,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 2003812112}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -4471,7 +4505,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &578902556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4670,6 +4707,159 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &600774798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600774799}
+  - component: {fileID: 600774802}
+  - component: {fileID: 600774801}
+  - component: {fileID: 600774800}
+  - component: {fileID: 600774803}
+  m_Layer: 5
+  m_Name: Next Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &600774799
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600774798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1327576377}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.14, y: -2.13}
+  m_SizeDelta: {x: 0.3, y: 0.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &600774800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600774798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 600774801}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 600774803}
+        m_MethodName: OnClickNextOnSpeechBubble
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &600774801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600774798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 585ed4a92a8ace44ba59c1530acb0ff3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &600774802
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600774798}
+  m_CullTransparentMesh: 0
+--- !u!114 &600774803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600774798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1540d652c095084d9c1ba2540f987c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 0}
+  _imgBuilding: {fileID: 0}
+  _imgName: {fileID: 0}
+  _btnClub: {fileID: 0}
+  _btnRestaurant: {fileID: 0}
+  _btnBuilding: {fileID: 0}
+  _questionMark: {fileID: 0}
+  _imgBtnNavigating: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 1606522977}
+  _text2: {fileID: 1839972985}
 --- !u!4 &609214579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400018, guid: d06b5ef29eb5dfb4c95903741493146f,
@@ -4968,7 +5158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -4976,7 +5165,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &661733604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5353,7 +5545,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 664781265}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -5361,7 +5552,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &705793497
 GameObject:
   m_ObjectHideFlags: 0
@@ -5392,7 +5586,7 @@ Transform:
   - {fileID: 1248522290}
   - {fileID: 2053007945}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 14.912001, z: 0}
 --- !u!1 &741560283
 GameObject:
@@ -5520,7 +5714,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -5528,7 +5721,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &749804610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5860,7 +6056,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 1489828937}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -5868,7 +6063,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &802532455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5982,7 +6180,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1988732264}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6342,7 +6540,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -6350,7 +6547,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &852486686
 GameObject:
   m_ObjectHideFlags: 0
@@ -6506,11 +6706,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 800
+      value: 820
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 56b1cba7220dfd849ab14dbd1636d920, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6722,7 +6922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -6730,7 +6929,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &888513018
 GameObject:
   m_ObjectHideFlags: 0
@@ -6972,7 +7174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 2003812112}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -6980,7 +7181,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &947834006
 GameObject:
   m_ObjectHideFlags: 0
@@ -7033,7 +7237,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -7041,7 +7244,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &947834009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7258,7 +7464,7 @@ Transform:
   - {fileID: 578902560}
   - {fileID: 72132478}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -87.844, z: 0}
 --- !u!1 &1008495741
 GameObject:
@@ -7290,15 +7496,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1219164737}
+  m_Children: []
   m_Father: {fileID: 664781266}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 266, y: -278}
-  m_SizeDelta: {x: 100, y: 80}
+  m_AnchoredPosition: {x: 295, y: -297}
+  m_SizeDelta: {x: 134, y: 130.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1008495743
 MonoBehaviour:
@@ -7403,7 +7608,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 664781265}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -7411,7 +7615,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 1644716753}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1022318027
 GameObject:
   m_ObjectHideFlags: 0
@@ -7695,7 +7902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -7703,7 +7909,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &1073579492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7846,7 +8055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -7854,7 +8062,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &1122648230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7975,7 +8186,7 @@ Transform:
   - {fileID: 790295943}
   - {fileID: 1482866699}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 14.378, z: 0}
 --- !u!1001 &1137387741
 PrefabInstance:
@@ -8182,7 +8393,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -8190,7 +8400,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &1188628042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8281,7 +8494,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188628039}
   m_CullTransparentMesh: 0
---- !u!1 &1219164736
+--- !u!1 &1195661509
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8289,76 +8502,71 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1219164737}
-  - component: {fileID: 1219164739}
-  - component: {fileID: 1219164738}
+  - component: {fileID: 1195661510}
+  - component: {fileID: 1195661512}
+  - component: {fileID: 1195661511}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1219164737
+--- !u!224 &1195661510
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219164736}
+  m_GameObject: {fileID: 1195661509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1008495742}
+  m_Father: {fileID: 1327576377}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -52, y: 41}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 8, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1219164738
+--- !u!114 &1195661511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219164736}
+  m_GameObject: {fileID: 1195661509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: Click!
---- !u!222 &1219164739
+  m_Sprite: {fileID: 21300000, guid: 9dc55635740194644a0b4dee792982a9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1195661512
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219164736}
+  m_GameObject: {fileID: 1195661509}
   m_CullTransparentMesh: 0
 --- !u!1 &1228366475
 GameObject:
@@ -8412,7 +8620,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -8420,7 +8627,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &1228366478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8653,7 +8863,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -8661,7 +8870,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1248522286
 GameObject:
   m_ObjectHideFlags: 0
@@ -8852,7 +9064,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -8860,7 +9071,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &1273905630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8981,7 +9195,7 @@ Transform:
   - {fileID: 196226083}
   - {fileID: 1754251710}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 1.0810001, z: 0}
 --- !u!1 &1296521931
 GameObject:
@@ -9116,6 +9330,108 @@ Transform:
   m_Father: {fileID: 1137387742}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1327576373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1327576377}
+  - component: {fileID: 1327576376}
+  - component: {fileID: 1327576375}
+  - component: {fileID: 1327576374}
+  m_Layer: 5
+  m_Name: SSung Ma Telling
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1327576374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327576373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1327576375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327576373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1327576376
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327576373}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1327576377
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327576373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 526}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1195661510}
+  - {fileID: 1606522976}
+  - {fileID: 1839972984}
+  - {fileID: 600774799}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 667.09, y: 3}
+  m_SizeDelta: {x: 10, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1338151306
 GameObject:
   m_ObjectHideFlags: 0
@@ -9258,7 +9574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -9266,7 +9581,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1356220422
 GameObject:
   m_ObjectHideFlags: 0
@@ -9409,7 +9727,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 664781265}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -9417,7 +9734,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 1644716753}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1425538487
 GameObject:
   m_ObjectHideFlags: 0
@@ -9590,7 +9910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00004057038, y: 0.000026136482}
+  m_AnchoredPosition: {x: 0.00004057038, y: 0.000022831338}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1453755855
@@ -9659,7 +9979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -9667,7 +9986,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &1455659073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9966,7 +10288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 1684420079}
@@ -9974,7 +10295,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 824481811}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1482866698
 GameObject:
   m_ObjectHideFlags: 0
@@ -10313,7 +10637,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -10321,7 +10644,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1537486356
 GameObject:
   m_ObjectHideFlags: 0
@@ -10566,7 +10892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -10574,7 +10899,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1553135828
 GameObject:
   m_ObjectHideFlags: 0
@@ -10917,6 +11245,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594784907}
   m_CullTransparentMesh: 0
+--- !u!1 &1606522975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1606522976}
+  - component: {fileID: 1606522978}
+  - component: {fileID: 1606522977}
+  m_Layer: 5
+  m_Name: Telling Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1606522976
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606522975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_Children: []
+  m_Father: {fileID: 1327576377}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.62}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1606522977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606522975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 68601c1484e389f459d90cdbfbdc6e1d, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1606522978
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606522975}
+  m_CullTransparentMesh: 0
 --- !u!1 &1635230289
 GameObject:
   m_ObjectHideFlags: 0
@@ -10969,7 +11376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -10977,7 +11383,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &1635230292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11408,7 +11817,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -11416,7 +11824,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1684420079
 GameObject:
   m_ObjectHideFlags: 0
@@ -11579,7 +11990,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 2132873783}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -11587,7 +11997,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1703122372
 GameObject:
   m_ObjectHideFlags: 0
@@ -12197,7 +12610,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -12205,7 +12617,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1819107096
 GameObject:
   m_ObjectHideFlags: 0
@@ -12348,7 +12763,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -12356,7 +12770,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1830279359
 GameObject:
   m_ObjectHideFlags: 0
@@ -12396,6 +12813,85 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -201.99997}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1839972983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839972984}
+  - component: {fileID: 1839972986}
+  - component: {fileID: 1839972985}
+  m_Layer: 5
+  m_Name: Page Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1839972984
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839972983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1327576377}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1839972985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839972983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1839972986
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839972983}
+  m_CullTransparentMesh: 0
 --- !u!1 &1848244518
 GameObject:
   m_ObjectHideFlags: 0
@@ -12616,16 +13112,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1540d652c095084d9c1ba2540f987c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panel: {fileID: 0}
-  _clubText: {fileID: 0}
+  _panel: {fileID: 486523425}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
   _btnRestaurant: {fileID: 0}
   _btnBuilding: {fileID: 0}
-  _questionMark: {fileID: 0}
+  _questionMark: {fileID: 196458342}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 1327576373}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 1606522977}
+  _text2: {fileID: 1839972985}
 --- !u!1 &1899097758
 GameObject:
   m_ObjectHideFlags: 0
@@ -12768,7 +13266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 486523425}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -12776,7 +13273,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 196458342}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 1327576373}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 1606522977}
+  _text2: {fileID: 1839972985}
 --- !u!1 &1916097294
 GameObject:
   m_ObjectHideFlags: 0
@@ -12966,7 +13466,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -12974,7 +13473,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &1938376046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13177,7 +13679,7 @@ GameObject:
   - component: {fileID: 1964363861}
   m_Layer: 5
   m_Name: Destination
-  m_TagString: Untagged
+  m_TagString: Destination
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13385,7 +13887,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -13393,7 +13894,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &1982436259
 GameObject:
   m_ObjectHideFlags: 0
@@ -13565,7 +14069,7 @@ Transform:
   m_Children:
   - {fileID: 609214579}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988732263
 GameObject:
@@ -13880,7 +14384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 157982160}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 812576115}
   _imgName: {fileID: 349796711}
   _btnClub: {fileID: 0}
@@ -13888,7 +14391,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 0}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!1 &2053007944
 GameObject:
   m_ObjectHideFlags: 0
@@ -14193,7 +14699,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 0}
-  _clubText: {fileID: 0}
   _imgBuilding: {fileID: 0}
   _imgName: {fileID: 0}
   _btnClub: {fileID: 0}
@@ -14201,7 +14706,10 @@ MonoBehaviour:
   _btnBuilding: {fileID: 0}
   _questionMark: {fileID: 0}
   _imgBtnNavigating: {fileID: 0}
-  _destinationText: {fileID: 1964363861}
+  _ssungMaTelling: {fileID: 0}
+  _navigatingObject: {fileID: 0}
+  _text: {fileID: 0}
+  _text2: {fileID: 0}
 --- !u!114 &2054693645
 MonoBehaviour:
   m_ObjectHideFlags: 0

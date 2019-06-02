@@ -44,7 +44,7 @@ public class ARcameraLocation : MonoBehaviour
     void Update()
     {
        // Invoke("Move", 0.2f);
-       // GyroRotate();
+        GyroRotate();
     }
 
     IEnumerator Move()
