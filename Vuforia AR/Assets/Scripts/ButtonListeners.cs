@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class ButtonListeners:MonoBehaviour
 {
@@ -56,11 +57,16 @@ public class ButtonListeners:MonoBehaviour
     {
         //_panel = 건물 정보 패널
         Animator animator = _panel.GetComponent<Animator>();
+        _text = GameObject.FindGameObjectWithTag("BuildingInformationText").GetComponent<Text>();
 
         if(animator != null)
         {
             _imgBuilding.sprite = Resources.Load<Sprite>("UI/Buildings/" + name);
             _imgName.sprite = Resources.Load<Sprite>("UI/Building Names/" + name + "UI");
+
+            StreamReader sr = new StreamReader("Assets/Resources/Building Informations/" + name + ".txt", System.Text.Encoding.Default);
+            string read;
+            _text.text = sr.ReadLine();
 
             animator.SetBool("open", true);
         }
@@ -192,14 +198,14 @@ public class ButtonListeners:MonoBehaviour
             {
                 // 네비게이팅 실행 중 -> 네비게이팅 종료
                 _imgBtnNavigating.sprite = Resources.Load<Sprite>("UI/navigation button");
-                //ARnavigating.ClearNavi();
-                //_navigatingObject.SetActive(false);
+                ARnavigating.ClearNavi();
+                _navigatingObject.SetActive(false);
                 IsNavigating = false;
             }
             else
             {
                 // 네비게이팅을 실행시키기 위해 목적지 창 띄우기(실제 실행은 아님)
-                //_text.text = "";
+                _text.text = "";
                 animator.SetBool("open", true);
             }
         }
@@ -297,19 +303,19 @@ public class ButtonListeners:MonoBehaviour
             switch(_text.text)
             {
                 case "베어드홀":
-                    //ARnavigating.Destination = 0;
+                    ARnavigating.Destination = 0;
                     break;
                 case "학생회관":
-                    //ARnavigating.Destination = 1;
+                    ARnavigating.Destination = 1;
                     break;
                 case "진리관":
-                    //ARnavigating.Destination = 2;
+                    ARnavigating.Destination = 2;
                     break;
                 case "신양관":
-                    //ARnavigating.Destination = 4;
+                    ARnavigating.Destination = 4;
                     break;
                 case "한경직기념관":
-                    //ARnavigating.Destination = 5;
+                    ARnavigating.Destination = 5;
                     break;
                 default:
                     _text.text = "길찾기 실패";
@@ -320,7 +326,7 @@ public class ButtonListeners:MonoBehaviour
             {
                 // 네비게이팅 서비스 시작
                 _imgBtnNavigating.sprite = Resources.Load<Sprite>("UI/navigation exit button1");
-                //_navigatingObject.SetActive(true);
+                _navigatingObject.SetActive(true);
                 IsNavigating = true;
 
                 Animator animator = _panel.GetComponent<Animator>();

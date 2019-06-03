@@ -7,6 +7,7 @@ TagManager:
   - DistanceTxt
   - Destination
   - ClubInfoText
+  - BuildingInformationText
   layers:
   - Default
   - TransparentFX

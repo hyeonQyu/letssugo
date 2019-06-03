@@ -21,7 +21,7 @@ public class ARnavigating : MonoBehaviour
 
     static GameObject[] copyObjects; // Copy할 노드들
 
-    private static int Destination; // 목적지 : index로 찾는다. // 받아옴
+    public static int Destination; // 목적지 : index로 찾는다. // 받아옴
 
     private List<Node> bigNodes; // 교차로 노드, 건물 노드 포함
     private List<Edge> edgeNodes;
@@ -32,7 +32,6 @@ public class ARnavigating : MonoBehaviour
 
     private bool opponent = false; // edgeNode에서 거꾸로 찾았을 때 start와 end
     public static bool isFindPath = false;
-    private bool isActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -94,7 +93,7 @@ public class ARnavigating : MonoBehaviour
     {
         int myIndex = 0, currentIndex = 0;
         double min_distance = INFINITE;
-        while (true) // buttonlist....
+        while (ButtonListeners.IsNavigating)
         {
             myIndex = currentIndex;
             min_distance = Distance(divice, realPath[myIndex]);
