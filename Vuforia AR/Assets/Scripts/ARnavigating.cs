@@ -130,7 +130,7 @@ public class ARnavigating : MonoBehaviour
 
                 }
             }
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(5);
         }
     }
 

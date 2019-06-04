@@ -50,7 +50,7 @@ public class ButtonListeners:MonoBehaviour
     private Text _text2;
 
     //[SerializeField]
-    private string[] _speechTexts = { "0", "1", "2", "3", "4" };
+    private string[] _speechTexts = { "", "", "", "", "" };
 
     public void OnClickExit()
     {
@@ -70,7 +70,9 @@ public class ButtonListeners:MonoBehaviour
             _imgBuilding.sprite = Resources.Load<Sprite>("UI/Buildings/" + name);
             _imgName.sprite = Resources.Load<Sprite>("UI/Building Names/" + name + "UI");
 
-            StreamReader sr = new StreamReader("Assets/Resources/Building Informations/" + name + ".txt", System.Text.Encoding.Default);
+            //StreamReader sr = new StreamReader("Assets/Resources/Building Informations/" + name + ".txt", System.Text.Encoding.Default);
+            TextAsset asset = Resources.Load<TextAsset>("Building Informations/" + name);
+            StringReader sr = new StringReader(asset.text);
             _text.text = sr.ReadLine();
 
             animator.SetBool("open", true);
@@ -158,6 +160,7 @@ public class ButtonListeners:MonoBehaviour
                 _panel.transform.position = new Vector3(_ssungPos.x, _ssungPos.y, _ssungPos.z);
             }
             animator.SetBool("Walk", false);
+            _panel.transform.position = new Vector3(780, 6.6f, 526);
             _panel.SetActive(false);
             // 물음표 복구
             questionMark.transform.position = new Vector3(669.2f, 8, 529.9f);
@@ -169,7 +172,10 @@ public class ButtonListeners:MonoBehaviour
     {
         for(int i = 0; i < _speechTexts.Length; i++)
         {
-            StreamReader sr = new StreamReader("Assets/Resources/SSung Ma Telling/" + Convert.ToString(i) + ".txt", System.Text.Encoding.UTF8);
+            //StreamReader sr = new StreamReader("Assets/Resources/SSung Ma Telling/" + Convert.ToString(i) + ".txt", System.Text.Encoding.UTF8);
+            //_speechTexts[i] = sr.ReadLine();
+            TextAsset asset = Resources.Load<TextAsset>("SSung Ma Telling/" + Convert.ToString(i));
+            StringReader sr = new StringReader(asset.text);
             _speechTexts[i] = sr.ReadLine();
         }
 
@@ -179,6 +185,11 @@ public class ButtonListeners:MonoBehaviour
             _ssungMaTelling.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
             _text.text = _speechTexts[0];
             _text2.text = "0";
+
+            GameObject nextButton = GameObject.Find("SSung Ma Telling").transform.Find("Next Button").gameObject;
+            GameObject previousButton = GameObject.Find("SSung Ma Telling").transform.Find("Previous Button").gameObject;
+            nextButton.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            previousButton.transform.localScale = new Vector3(0, 0, 0);
         }
         else
         {
@@ -191,7 +202,7 @@ public class ButtonListeners:MonoBehaviour
                 {
                     _text.text = _speechTexts[nextIndex];
                     _text2.text = Convert.ToString(nextIndex);
-                    _previousButton.transform.localScale = new Vector3(1, 1, 1);
+                    _previousButton.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
 
                     if(nextIndex == 4)
                     {
@@ -210,7 +221,7 @@ public class ButtonListeners:MonoBehaviour
                 {
                     _text.text = _speechTexts[prevIndex];
                     _text2.text = Convert.ToString(prevIndex);
-                    _nextButton.transform.localScale = new Vector3(1, 1, 1);
+                    _nextButton.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                     // 안녕버튼 비활성화
                     GameObject.Find("SSung Ma Telling").transform.Find("Bye SSung Ma").gameObject.SetActive(false);
 
