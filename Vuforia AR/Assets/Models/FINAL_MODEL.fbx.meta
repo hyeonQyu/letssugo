@@ -137,7 +137,7 @@ ModelImporter:
       name: Walk
       takeName: Armature|ArmatureAction.001
       firstFrame: 0
-      lastFrame: 310
+      lastFrame: 306
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using agi = HtmlAgilityPack;
 
-public class TodayMenuParsing : MonoBehaviour
+public class TodayMenuParsing:MonoBehaviour
 {
     [SerializeField]
     Text _menuText;
@@ -34,7 +34,7 @@ public class TodayMenuParsing : MonoBehaviour
 
         agi.HtmlNodeCollection node2 = new agi.HtmlNodeCollection(null);
         // 정보쪼개기 시작
-        foreach (agi.HtmlNode node1 in doc.DocumentNode.SelectNodes("//body"))
+        foreach(agi.HtmlNode node1 in doc.DocumentNode.SelectNodes("//body"))
         {
             agi.HtmlNodeCollection node3 = node1.SelectNodes(".//td[@style='text-align:left;border:1px dotted #b2b2b2;padding:3px 3px 3px 3px;width:140px;']");
             Classification(m1, node3[2]);
@@ -61,10 +61,16 @@ public class TodayMenuParsing : MonoBehaviour
 
         public void ShowMenu(Text text)
         {
-            text.text = text.text + time + "\n";
-            for (int i = 0; i < menu.Count; i++)
+            text.text = text.text + "\n" + time + "\n";
+            int count = menu.Count;
+            for(int i = 0; i < count; i++)
             {
-                text.text = text.text + menu[i] + "\n";
+                if(menu[i] == "")
+                    continue;
+                if(i == count - 2)
+                    text.text = text.text + menu[i] + " ";
+                else
+                    text.text = text.text + menu[i] + "\n";
             }
         }
     }
@@ -73,18 +79,19 @@ public class TodayMenuParsing : MonoBehaviour
     {
         agi.HtmlNodeCollection divide_td = node.SelectNodes(".//td");
         agi.HtmlNodeCollection check_div = divide_td[0].SelectNodes(".//div");
+        agi.HtmlNodeCollection check_br = divide_td[0].SelectNodes(".//br");
 
-        int count = check_div.Count;
+        int count = check_br.Count;
 
-        if (check_div == null)
+        if(check_div == null)
             return;
-        if (count < 2)
+        if(count > 2)
         {
-            String text = check_div[0].InnerHtml;
+            String text = divide_td[0].InnerHtml;
             text = text.Replace("<br>", "</div><div>");
-            check_div[0].InnerHtml = text;
-            agi.HtmlNodeCollection tmp = check_div[0].SelectNodes(".//div");
-            for (int i = 0; i < tmp.Count; i++)
+            divide_td[0].InnerHtml = text;
+            agi.HtmlNodeCollection tmp = divide_td[0].SelectNodes(".//div");
+            for(int i = 0; i < tmp.Count; i++)
             {
                 menu.menu.Add(tmp[i].InnerText);
             }
@@ -93,7 +100,7 @@ public class TodayMenuParsing : MonoBehaviour
         else
         {
             //menu.menu.Add(node.InnerText);
-            for (int i = 0; i < count; i++)
+            for(int i = 0; i < count; i++)
             {
                 menu.menu.Add(check_div[i].InnerText);
             }

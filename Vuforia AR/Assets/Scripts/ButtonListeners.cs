@@ -36,8 +36,14 @@ public class ButtonListeners:MonoBehaviour
     [SerializeField]
     private GameObject _navigatingObject;
 
+    [SerializeField]
+    private GameObject _nextButton;
+    [SerializeField]
+    private GameObject _previousButton;
+
     private bool _isOpened;
     private Vector3 _ssungPos;
+
     [SerializeField]
     private Text _text;
     [SerializeField]
@@ -65,7 +71,6 @@ public class ButtonListeners:MonoBehaviour
             _imgName.sprite = Resources.Load<Sprite>("UI/Building Names/" + name + "UI");
 
             StreamReader sr = new StreamReader("Assets/Resources/Building Informations/" + name + ".txt", System.Text.Encoding.Default);
-            string read;
             _text.text = sr.ReadLine();
 
             animator.SetBool("open", true);
@@ -113,66 +118,107 @@ public class ButtonListeners:MonoBehaviour
         _panel.SetActive(true);
         Animator animator = _panel.GetComponent<Animator>();
 
-        //_text = GameObject.FindGameObjectWithTag("TellingText").GetComponent<Text>();
-        //_text2 = GameObject.FindGameObjectWithTag("PageText").GetComponent<Text>();
-        //_ssungMaTelling = GameObject.FindGameObjectWithTag("SSungMaTelling").GetComponent<GameObject>();
-
         if(animator != null)
         {
             _questionMark.transform.position = new Vector3(-100, -100, -100);
             animator.SetBool("Run", true);
 
-            StartCoroutine(MoveSsungMa(animator));
+            StartCoroutine(MoveSsungMa(animator, "Run"));
         }
     }
 
-    IEnumerator MoveSsungMa(Animator animator)
+    IEnumerator MoveSsungMa(Animator animator, string state)
     {
         _ssungPos = _panel.transform.position;
 
-        while(_panel.transform.position.x > 670)
+        if(state == "Run")
         {
-            yield return new WaitForSeconds(0.01f);
-            _ssungPos.x -= 0.78f;
-            _panel.transform.position = new Vector3(_ssungPos.x, _ssungPos.y, _ssungPos.z);
+            while(_panel.transform.position.x > 670)
+            {
+                yield return new WaitForSeconds(0.01f);
+                _ssungPos.x -= 0.78f;
+                _panel.transform.position = new Vector3(_ssungPos.x, _ssungPos.y, _ssungPos.z);
+            }
+            animator.SetBool("Run", false);
+            Tell(true, true);
         }
-        animator.SetBool("Run", false);
-        Tell(true, true);
+        else if(state == "Walk")
+        {
+            GameObject ssungMaTelling = GameObject.Find("SSung Ma Telling");
+            GameObject questionMark = GameObject.Find("Question Mark");
+
+            // 말풍선 숨기기
+            ssungMaTelling.transform.localScale = new Vector3(0, 0, 0);
+            // 슝마 이동
+            animator.SetBool("Walk", true);
+            while(_panel.transform.position.x > 600)
+            {
+                yield return new WaitForSeconds(0.01f);
+                _ssungPos.x -= 0.2f;
+                _panel.transform.position = new Vector3(_ssungPos.x, _ssungPos.y, _ssungPos.z);
+            }
+            animator.SetBool("Walk", false);
+            _panel.SetActive(false);
+            // 물음표 복구
+            questionMark.transform.position = new Vector3(669.2f, 8, 529.9f);
+            gameObject.SetActive(false);
+        }
     }
 
     public void Tell(bool isFirstPage, bool isNext)
     {
-        //_text = GameObject.FindGameObjectWithTag("TellingText").GetComponent<Text>();
-        //_text2 = GameObject.FindGameObjectWithTag("PageText").GetComponent<Text>();
-        //_ssungMaTelling = GameObject.FindGameObjectWithTag("SSungMaTelling").GetComponent<GameObject>();
+        for(int i = 0; i < _speechTexts.Length; i++)
+        {
+            StreamReader sr = new StreamReader("Assets/Resources/SSung Ma Telling/" + Convert.ToString(i) + ".txt", System.Text.Encoding.UTF8);
+            _speechTexts[i] = sr.ReadLine();
+        }
 
         if(isFirstPage)
         {
             // 말풍선이 생성되었을 때
-            //_ssungMaTelling.SetActive(true);
-            _ssungMaTelling.transform.localScale += new Vector3(1.0f, 1.0f, 1.0f);
+            _ssungMaTelling.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
             _text.text = _speechTexts[0];
             _text2.text = "0";
         }
         else
         {
+            int index = Convert.ToInt32(_text2.text);
             // 다음 말풍선
             if(isNext)
             {
-                int nextIndex = Convert.ToInt32(_text2.text) + 1;
+                int nextIndex = index + 1;
                 if(nextIndex < 5)
                 {
                     _text.text = _speechTexts[nextIndex];
                     _text2.text = Convert.ToString(nextIndex);
+                    _previousButton.transform.localScale = new Vector3(1, 1, 1);
+
+                    if(nextIndex == 4)
+                    {
+                        // 다음버튼 비활성화
+                        _nextButton.transform.localScale = new Vector3(0, 0, 0);
+                        // 안녕버튼 활성화
+                        GameObject.Find("SSung Ma Telling").transform.Find("Bye SSung Ma").gameObject.SetActive(true);
+                    }
                 }
             }
+            // 이전 말풍선
             else
             {
-                int prevIndex = Convert.ToInt32(_text2.text) - 1;
+                int prevIndex = index - 1;
                 if(prevIndex > -1)
                 {
                     _text.text = _speechTexts[prevIndex];
                     _text2.text = Convert.ToString(prevIndex);
+                    _nextButton.transform.localScale = new Vector3(1, 1, 1);
+                    // 안녕버튼 비활성화
+                    GameObject.Find("SSung Ma Telling").transform.Find("Bye SSung Ma").gameObject.SetActive(false);
+
+                    if(prevIndex == 0)
+                    {
+                        // 이전버튼 비활성화
+                        _previousButton.transform.localScale = new Vector3(0, 0, 0);
+                    }
                 }
             }
         }
@@ -352,6 +398,16 @@ public class ButtonListeners:MonoBehaviour
                 _text.text += GroupParsing.separationRecords[index].element[i].location + "\n";
                 _text.text += GroupParsing.separationRecords[index].element[i].information + "\n";
             }
+        }
+    }
+
+    public void OnClickByeSsungMa()
+    {
+        Animator animator = _panel.GetComponent<Animator>();
+
+        if(animator != null)
+        {
+            StartCoroutine(MoveSsungMa(animator, "Walk"));
         }
     }
 }

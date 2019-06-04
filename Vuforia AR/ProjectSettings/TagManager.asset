@@ -8,6 +8,8 @@ TagManager:
   - Destination
   - ClubInfoText
   - BuildingInformationText
+  - Next
+  - Previous
   layers:
   - Default
   - TransparentFX

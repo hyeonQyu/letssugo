@@ -196,29 +196,29 @@ public class ARnavigating : MonoBehaviour
     void InitBuilding()
     {
         // Building initialize
-        bigNodes.Add(new Node(542f, 10f, 499f, "B_0")); // 0
-        bigNodes.Add(new Node(580f, 10f, 577f, "B_1")); // 1
-        bigNodes.Add(new Node(643f, 10f, 609f, "B_2")); // 2
-        bigNodes.Add(new Node(708.4f, 10f, 586f, "B_3")); // 3
-        bigNodes.Add(new Node(769f, 10f, 451f, "B_4")); // 4
-        bigNodes.Add(new Node(700f, 10f, 354.6f, "B_5")); // 5
+        bigNodes.Add(new Node(542f, 0f, 499f, "B_0")); // 0
+        bigNodes.Add(new Node(580f, 0f, 577f, "B_1")); // 1
+        bigNodes.Add(new Node(643f, 0f, 609f, "B_2")); // 2
+        bigNodes.Add(new Node(708.4f, 0f, 586f, "B_3")); // 3
+        bigNodes.Add(new Node(769f, 0f, 451f, "B_4")); // 4
+        bigNodes.Add(new Node(700f, 0f, 354.6f, "B_5")); // 5
     }
 
     void InitCross()
     {
         // Cross streat initialize
-        bigNodes.Add(new Node(561.5f, 10f, 495.8f, "C_6")); // 6
-        bigNodes.Add(new Node(572.1f, 10f, 530f, "C_7")); // 7
-        bigNodes.Add(new Node(624f, 10f, 564f, "C_8")); // 8
-        bigNodes.Add(new Node(631.1f, 10f, 609f, "C_9")); // 9
-        bigNodes.Add(new Node(705.2f, 10f, 564.1f, "C_10")); // 10
-        bigNodes.Add(new Node(758.9f, 10f, 535.6f, "C_11")); // 11
-        bigNodes.Add(new Node(750.9f, 10f, 455.3f, "C_12")); // 12
-        bigNodes.Add(new Node(736.6f, 10f, 419f, "C_13")); // 13
-        bigNodes.Add(new Node(697.5f, 10f, 378.3f, "C_14")); // 14
-        bigNodes.Add(new Node(612.3f, 10f, 378f, "C_15")); // 15
-        bigNodes.Add(new Node(611f, 10f, 432f, "C_16")); // 16
-        bigNodes.Add(new Node(566f, 10f, 437f, "C_17")); // 17
+        bigNodes.Add(new Node(561.5f, 0f, 495.8f, "C_6")); // 6
+        bigNodes.Add(new Node(572.1f, 0f, 530f, "C_7")); // 7
+        bigNodes.Add(new Node(624f, 0f, 564f, "C_8")); // 8
+        bigNodes.Add(new Node(631.1f, 0f, 609f, "C_9")); // 9
+        bigNodes.Add(new Node(705.2f, 0f, 564.1f, "C_10")); // 10
+        bigNodes.Add(new Node(758.9f, 0f, 535.6f, "C_11")); // 11
+        bigNodes.Add(new Node(750.9f, 0f, 455.3f, "C_12")); // 12
+        bigNodes.Add(new Node(736.6f, 0f, 419f, "C_13")); // 13
+        bigNodes.Add(new Node(697.5f, 0f, 378.3f, "C_14")); // 14
+        bigNodes.Add(new Node(612.3f, 0f, 378f, "C_15")); // 15
+        bigNodes.Add(new Node(611f, 0f, 432f, "C_16")); // 16
+        bigNodes.Add(new Node(566f, 0f, 437f, "C_17")); // 17
     }
 
     void InitEdge()
@@ -250,36 +250,36 @@ public class ARnavigating : MonoBehaviour
     void InitSmallNode()
     {
         //smallNodes initialize
-        edgeNodes[1].smallNodes.Add(new Node(574.8f, 10f, 552.6f, null)); // 1-7
-        edgeNodes[2].smallNodes.Add(new Node(600.1f, 10f, 566.2f, null)); // 1-8
-        edgeNodes[7].smallNodes.Add(new Node(569.4f, 10f, 511.7f, null)); // 6-7
-        edgeNodes[8].smallNodes.Add(new Node(567f, 10f, 475.5f, null)); // 6-17
-        edgeNodes[8].smallNodes.Add(new Node(567f, 10f, 457.4f, null)); // 6-17
-        edgeNodes[9].smallNodes.Add(new Node(592f, 10f, 530f, null)); // 7-8
-        edgeNodes[9].smallNodes.Add(new Node(607f, 10f, 538f, null)); // 7-8
-        edgeNodes[9].smallNodes.Add(new Node(619f, 10f, 549f, null)); // 7-8
-        edgeNodes[10].smallNodes.Add(new Node(623.6f, 10f, 585f, null)); // 8-9
-        edgeNodes[11].smallNodes.Add(new Node(642f, 10f, 561f, null)); // 8-10
-        edgeNodes[11].smallNodes.Add(new Node(661f, 10f, 557f, null)); // 8-10
-        edgeNodes[11].smallNodes.Add(new Node(682f, 10f, 560.2f, null)); // 8-10
-        edgeNodes[12].smallNodes.Add(new Node(724f, 10f, 552.5f, null)); // 10-11
-        edgeNodes[12].smallNodes.Add(new Node(742f, 10f, 543.3f, null)); // 10-11
-        edgeNodes[13].smallNodes.Add(new Node(754.3f, 10f, 518.5f, null)); // 11-12
-        edgeNodes[13].smallNodes.Add(new Node(752.8f, 10f, 494.5f, null)); // 11-12
-        edgeNodes[13].smallNodes.Add(new Node(751.3f, 10f, 476f, null)); // 11-12
-        edgeNodes[14].smallNodes.Add(new Node(743.9f, 10f, 438.7f, null)); // 12-13
-        edgeNodes[15].smallNodes.Add(new Node(726.6f, 10f, 404.2f, null)); // 13-14
-        edgeNodes[15].smallNodes.Add(new Node(710.7f, 10f, 388.6f, null)); // 13-14
-        edgeNodes[16].smallNodes.Add(new Node(709f, 10f, 424f, null)); // 13-16
-        edgeNodes[16].smallNodes.Add(new Node(679f, 10f, 427f, null)); // 13-16
-        edgeNodes[16].smallNodes.Add(new Node(654f, 10f, 429f, null)); // 13-16
-        edgeNodes[16].smallNodes.Add(new Node(630f, 10f, 431f, null)); // 13-16
-        edgeNodes[17].smallNodes.Add(new Node(675.2f, 10f, 382.6f, null)); // 14-15
-        edgeNodes[17].smallNodes.Add(new Node(652.6f, 10f, 382.8f, null)); // 14-15
-        edgeNodes[17].smallNodes.Add(new Node(630.9f, 10f, 380.6f, null)); // 14-15
-        edgeNodes[18].smallNodes.Add(new Node(612.2f, 10f, 398.4f, null)); // 15-16
-        edgeNodes[18].smallNodes.Add(new Node(612.2f, 10f, 415.7f, null)); // 15-16
-        edgeNodes[19].smallNodes.Add(new Node(589f, 10f, 436f, null)); // 16-17
+        edgeNodes[1].smallNodes.Add(new Node(574.8f, 0f, 552.6f, null)); // 1-7
+        edgeNodes[2].smallNodes.Add(new Node(600.1f, 0f, 566.2f, null)); // 1-8
+        edgeNodes[7].smallNodes.Add(new Node(569.4f, 0f, 511.7f, null)); // 6-7
+        edgeNodes[8].smallNodes.Add(new Node(567f, 0f, 475.5f, null)); // 6-17
+        edgeNodes[8].smallNodes.Add(new Node(567f, 0f, 457.4f, null)); // 6-17
+        edgeNodes[9].smallNodes.Add(new Node(592f, 0f, 530f, null)); // 7-8
+        edgeNodes[9].smallNodes.Add(new Node(607f, 0f, 538f, null)); // 7-8
+        edgeNodes[9].smallNodes.Add(new Node(619f, 0f, 549f, null)); // 7-8
+        edgeNodes[10].smallNodes.Add(new Node(623.6f, 0f, 585f, null)); // 8-9
+        edgeNodes[11].smallNodes.Add(new Node(642f, 0f, 561f, null)); // 8-10
+        edgeNodes[11].smallNodes.Add(new Node(661f, 0f, 557f, null)); // 8-10
+        edgeNodes[11].smallNodes.Add(new Node(682f, 0f, 560.2f, null)); // 8-10
+        edgeNodes[12].smallNodes.Add(new Node(724f, 0f, 552.5f, null)); // 10-11
+        edgeNodes[12].smallNodes.Add(new Node(742f, 0f, 543.3f, null)); // 10-11
+        edgeNodes[13].smallNodes.Add(new Node(754.3f, 0f, 518.5f, null)); // 11-12
+        edgeNodes[13].smallNodes.Add(new Node(752.8f, 0f, 494.5f, null)); // 11-12
+        edgeNodes[13].smallNodes.Add(new Node(751.3f, 0f, 476f, null)); // 11-12
+        edgeNodes[14].smallNodes.Add(new Node(743.9f, 0f, 438.7f, null)); // 12-13
+        edgeNodes[15].smallNodes.Add(new Node(726.6f, 0f, 404.2f, null)); // 13-14
+        edgeNodes[15].smallNodes.Add(new Node(710.7f, 0f, 388.6f, null)); // 13-14
+        edgeNodes[16].smallNodes.Add(new Node(709f, 0f, 424f, null)); // 13-16
+        edgeNodes[16].smallNodes.Add(new Node(679f, 0f, 427f, null)); // 13-16
+        edgeNodes[16].smallNodes.Add(new Node(654f, 0f, 429f, null)); // 13-16
+        edgeNodes[16].smallNodes.Add(new Node(630f, 0f, 431f, null)); // 13-16
+        edgeNodes[17].smallNodes.Add(new Node(675.2f, 0f, 382.6f, null)); // 14-15
+        edgeNodes[17].smallNodes.Add(new Node(652.6f, 0f, 382.8f, null)); // 14-15
+        edgeNodes[17].smallNodes.Add(new Node(630.9f, 0f, 380.6f, null)); // 14-15
+        edgeNodes[18].smallNodes.Add(new Node(612.2f, 0f, 398.4f, null)); // 15-16
+        edgeNodes[18].smallNodes.Add(new Node(612.2f, 0f, 415.7f, null)); // 15-16
+        edgeNodes[19].smallNodes.Add(new Node(589f, 0f, 436f, null)); // 16-17
     }
 
     void InitGraph()
