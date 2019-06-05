@@ -43,7 +43,8 @@ public class ARcameraLocation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // Invoke("Move", 0.2f);
+        // Invoke("Move", 0.2f);
+        //Invoke("GyroRotate", 0.2f);
         GyroRotate();
     }
 
@@ -52,17 +53,17 @@ public class ARcameraLocation : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(0.2f);
-            //_latitude = Input.location.lastData.latitude;
-            //_longitude = Input.location.lastData.longitude;
+            _latitude = Input.location.lastData.latitude;
+            _longitude = Input.location.lastData.longitude;
 
-            //_x = GetX(_longitude);
-            //_y = 3.09657163053723f;
-            //_z = GetZ(_latitude);
-            _x = 669;
+            _x = GetX(_longitude);
             _y = 3.09657163053723f;
-            _z = 507.3f;
+            _z = GetZ(_latitude);
+            //_x = 669;
+            //_y = 3.09657163053723f;
+            //_z = 507.3f;
 
-            _text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + "\n" + _horizontalAccuracy + "     " + _verticalAccuracy.ToString();
+            //_text.text = _latitude.ToString() + "     " + _longitude.ToString() + "     " + "\n" + _x.ToString() + "     " + _z.ToString() + "     " + "\n" + _horizontalAccuracy + "     " + _verticalAccuracy.ToString();
 
             transform.position = new Vector3(_x, _y‬‬, _z);
         }

@@ -182,7 +182,7 @@ public class ButtonListeners:MonoBehaviour
         if(isFirstPage)
         {
             // 말풍선이 생성되었을 때
-            _ssungMaTelling.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
+            _ssungMaTelling.transform.localScale = new Vector3(1, 1, 1);
             _text.text = _speechTexts[0];
             _text2.text = "0";
 
